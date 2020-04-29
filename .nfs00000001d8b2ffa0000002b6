@@ -1,0 +1,135 @@
+[I 00:10:14.980 LabApp] JupyterLab extension loaded from /nas/longleaf/home/minzhi/anaconda3/lib/python3.6/site-packages/jupyterlab
+[I 00:10:14.980 LabApp] JupyterLab application directory is /nas/longleaf/home/minzhi/anaconda3/share/jupyter/lab
+[I 00:10:16.223 LabApp] Serving notebooks from local directory: /proj/yunligrp/users/minzhi/asso/asso_script
+[I 00:10:16.223 LabApp] The Jupyter Notebook is running at:
+[I 00:10:16.223 LabApp] http://172.26.114.226:8152/?token=49df23ac9bf49c00455bb7058b808a1f83d8ffb1694c9d9a
+[I 00:10:16.223 LabApp]  or http://127.0.0.1:8152/?token=49df23ac9bf49c00455bb7058b808a1f83d8ffb1694c9d9a
+[I 00:10:16.223 LabApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 00:10:16.233 LabApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///nas/longleaf/home/minzhi/.local/share/jupyter/runtime/nbserver-97161-open.html
+    Or copy and paste one of these URLs:
+        http://172.26.114.226:8152/?token=49df23ac9bf49c00455bb7058b808a1f83d8ffb1694c9d9a
+     or http://127.0.0.1:8152/?token=49df23ac9bf49c00455bb7058b808a1f83d8ffb1694c9d9a
+[I 12:27:51.435 LabApp] 302 GET /?token=49df23ac9bf49c00455bb7058b808a1f83d8ffb1694c9d9a (172.26.113.1) 0.95ms
+[W 12:27:58.887 LabApp] 404 GET /api/contents/data_summary.ipynb?content=0&1587227277939 (172.26.113.1): No such file or directory: data_summary.ipynb
+[W 12:27:58.887 LabApp] No such file or directory: data_summary.ipynb
+[W 12:27:58.887 LabApp] 404 GET /api/contents/data_summary.ipynb?content=0&1587227277939 (172.26.113.1) 2.89ms referer=http://localhost:8152/lab
+-\|/-\|/-\|/[W 12:28:00.466 LabApp] The extension "@lckr/jupyterlab_variableinspector" is outdated.
+    
+[I 12:28:00.469 LabApp] Build is up to date
+-\|/-\|/-\|/-\|/-\|[I 16:52:20.295 LabApp] 302 GET /?token=49df23ac9bf49c00455bb7058b808a1f83d8ffb1694c9d9a (172.26.113.1) 0.66ms
+[W 16:52:24.326 LabApp] 404 GET /api/contents/JHS_data_preprocessing.ipynb?content=0&1587329542815 (172.26.113.1): No such file or directory: JHS_data_preprocessing.ipynb
+[W 16:52:24.327 LabApp] No such file or directory: JHS_data_preprocessing.ipynb
+[W 16:52:24.327 LabApp] 404 GET /api/contents/JHS_data_preprocessing.ipynb?content=0&1587329542815 (172.26.113.1) 2.98ms referer=http://localhost:8152/lab
+[W 16:52:24.329 LabApp] 404 GET /api/contents/JHS_prot_methy_meta.ipynb?content=0&1587329542816 (172.26.113.1): No such file or directory: JHS_prot_methy_meta.ipynb
+[W 16:52:24.329 LabApp] No such file or directory: JHS_prot_methy_meta.ipynb
+[W 16:52:24.330 LabApp] 404 GET /api/contents/JHS_prot_methy_meta.ipynb?content=0&1587329542816 (172.26.113.1) 2.05ms referer=http://localhost:8152/lab
+[W 16:52:25.563 LabApp] The extension "@lckr/jupyterlab_variableinspector" is outdated.
+    
+[I 16:52:25.564 LabApp] Build is up to date
+[I 16:53:50.217 LabApp] Kernel started: 6340bc14-61ab-4666-b291-538620e82d40
+[I 16:54:23.106 LabApp] Kernel started: 6bf2c55d-2b5d-4aa5-acd1-bce297673db7
+[I 16:55:29.407 LabApp] Starting buffering for 6bf2c55d-2b5d-4aa5-acd1-bce297673db7:9d624d5b-7f68-4dea-9157-ead7e8ef9906
+[I 16:55:29.407 LabApp] Starting buffering for 6340bc14-61ab-4666-b291-538620e82d40:01f2ec70-447f-47e2-8f13-a597ea19a843
+[I 03:48:28.821 LabApp] 302 GET /?token=49df23ac9bf49c00455bb7058b808a1f83d8ffb1694c9d9a (172.26.113.1) 1.46ms
+[W 03:48:36.254 LabApp] 404 GET /api/contents/JHS_prot_methy_meta.ipynb?content=0&1587887315018 (172.26.113.1): No such file or directory: JHS_prot_methy_meta.ipynb
+[W 03:48:36.254 LabApp] No such file or directory: JHS_prot_methy_meta.ipynb
+[W 03:48:36.254 LabApp] 404 GET /api/contents/JHS_prot_methy_meta.ipynb?content=0&1587887315018 (172.26.113.1) 3.46ms referer=http://localhost:8152/lab
+[W 03:48:36.255 LabApp] 404 GET /api/contents/JHS_data_preprocessing.ipynb?content=0&1587887315017 (172.26.113.1): No such file or directory: JHS_data_preprocessing.ipynb
+[W 03:48:36.255 LabApp] No such file or directory: JHS_data_preprocessing.ipynb
+[W 03:48:36.255 LabApp] 404 GET /api/contents/JHS_data_preprocessing.ipynb?content=0&1587887315017 (172.26.113.1) 2.95ms referer=http://localhost:8152/lab
+[W 03:48:37.654 LabApp] The extension "@lckr/jupyterlab_variableinspector" is outdated.
+    
+[I 03:48:37.655 LabApp] Build is up to date
+[I 21:27:09.173 LabApp] Saving file at /summary_alpha_globin.ipynb
+[I 21:29:12.676 LabApp] Saving file at /summary_alpha_globin.ipynb
+[I 21:31:15.022 LabApp] Saving file at /summary_alpha_globin.ipynb
+[I 21:41:20.573 LabApp] Saving file at /summary_alpha_globin.ipynb
+[I 21:43:22.408 LabApp] Saving file at /summary_alpha_globin.ipynb
+[I 21:45:24.888 LabApp] Saving file at /summary_alpha_globin.ipynb
+[I 21:47:27.342 LabApp] Saving file at /summary_alpha_globin.ipynb
+[I 02:05:04.726 LabApp] Starting buffering for 6340bc14-61ab-4666-b291-538620e82d40:05e014b0-bb18-4121-877b-ddc0baf76c79
+[I 02:05:04.727 LabApp] Starting buffering for 6bf2c55d-2b5d-4aa5-acd1-bce297673db7:4a0bb46c-c4fa-4f27-ade1-098f7ef4498a
+[I 03:29:10.775 LabApp] 302 GET /?token=49df23ac9bf49c00455bb7058b808a1f83d8ffb1694c9d9a (172.26.113.2) 0.59ms
+[W 03:29:16.918 LabApp] The extension "@lckr/jupyterlab_variableinspector" is outdated.
+    
+[I 03:29:16.919 LabApp] Build is up to date
+[I 03:33:27.291 LabApp] Saving file at /summary_alpha_globin.ipynb
+[I 03:35:29.986 LabApp] Saving file at /summary_alpha_globin.ipynb
+[I 12:46:05.761 LabApp] Saving file at /summary_alpha_globin.ipynb
+[I 12:48:08.635 LabApp] Saving file at /summary_alpha_globin.ipynb
+[I 13:52:25.474 LabApp] Saving file at /summary_alpha_globin.ipynb
+[I 13:54:28.879 LabApp] Saving file at /summary_alpha_globin.ipynb
+[I 14:20:36.716 LabApp] Saving file at /summary_alpha_globin.ipynb
+[I 14:32:50.303 LabApp] Creating new notebook in /
+[I 14:32:54.492 LabApp] Kernel started: d3c9c119-8981-42df-9a9c-7664f23b84ef
+[I 14:34:51.338 LabApp] Saving file at /process_apol1_data.ipynb
+[I 15:08:50.875 LabApp] Saving file at /summary_alpha_globin.ipynb
+[I 15:09:03.334 LabApp] Saving file at /process_apol1_data.ipynb
+[I 15:48:54.851 LabApp] Saving file at /summary_alpha_globin.ipynb
+[I 15:50:57.514 LabApp] Saving file at /summary_alpha_globin.ipynb
+[I 18:09:28.607 LabApp] Saving file at /summary_alpha_globin.ipynb
+[I 18:13:33.384 LabApp] Saving file at /summary_alpha_globin.ipynb
+[I 18:15:37.000 LabApp] Saving file at /summary_alpha_globin.ipynb
+[I 18:17:00.405 LabApp] Saving file at /summary_alpha_globin.ipynb
+[I 18:19:31.641 LabApp] Saving file at /process_a-globin_data.ipynb
+[I 18:19:36.437 LabApp] Saving file at /process_apol1_data.ipynb
+[I 18:41:11.262 LabApp] Saving file at /summary_alpha_globin.ipynb
+[I 18:43:14.074 LabApp] Saving file at /summary_alpha_globin.ipynb
+[I 18:45:17.556 LabApp] Saving file at /summary_alpha_globin.ipynb
+[I 18:47:20.071 LabApp] Saving file at /summary_alpha_globin.ipynb
+[I 18:49:23.404 LabApp] Saving file at /summary_alpha_globin.ipynb
+[I 18:51:29.022 LabApp] Saving file at /summary_alpha_globin.ipynb
+[I 18:53:31.509 LabApp] Saving file at /summary_alpha_globin.ipynb
+[I 18:55:34.414 LabApp] Saving file at /summary_alpha_globin.ipynb
+[I 18:57:37.234 LabApp] Saving file at /summary_alpha_globin.ipynb
+[I 19:01:42.009 LabApp] Saving file at /summary_alpha_globin.ipynb
+[I 19:01:44.439 LabApp] Saving file at /process_apol1_data.ipynb
+[I 19:03:45.448 LabApp] Saving file at /process_apol1_data.ipynb
+[I 19:05:45.110 LabApp] Saving file at /summary_alpha_globin.ipynb
+[I 19:07:48.863 LabApp] Saving file at /summary_alpha_globin.ipynb
+[I 19:07:49.418 LabApp] Saving file at /process_apol1_data.ipynb
+[I 19:09:52.005 LabApp] Saving file at /summary_alpha_globin.ipynb
+[I 19:19:58.247 LabApp] Saving file at /summary_alpha_globin.ipynb
+[I 19:37:58.298 LabApp] Saving file at /process_apol1_data.ipynb
+[I 19:43:58.431 LabApp] Saving file at /process_apol1_data.ipynb
+[I 19:45:59.453 LabApp] Saving file at /process_apol1_data.ipynb
+[I 19:47:59.633 LabApp] Saving file at /process_apol1_data.ipynb
+[I 19:49:59.758 LabApp] Saving file at /process_apol1_data.ipynb
+[I 21:58:25.501 LabApp] Saving file at /process_apol1_data.ipynb
+[I 22:00:26.525 LabApp] Saving file at /process_apol1_data.ipynb
+[I 22:04:27.560 LabApp] Saving file at /process_apol1_data.ipynb
+[I 22:22:30.535 LabApp] Saving file at /process_apol1_data.ipynb
+[I 22:24:30.730 LabApp] Saving file at /process_apol1_data.ipynb
+[I 00:40:43.577 LabApp] Saving file at /process_apol1_data.ipynb
+[I 00:42:43.736 LabApp] Saving file at /process_apol1_data.ipynb
+[I 00:44:45.259 LabApp] Saving file at /process_apol1_data.ipynb
+[I 00:54:55.586 LabApp] Saving file at /process_apol1_data.ipynb
+[I 01:00:55.754 LabApp] Saving file at /process_apol1_data.ipynb
+[I 01:44:57.945 LabApp] Saving file at /process_a-globin_data.ipynb
+[I 15:36:12.695 LabApp] Saving file at /process_a-globin_data.ipynb
+[W 15:59:06.674 LabApp] WebSocket ping timeout after 119972 ms.
+[W 15:59:06.800 LabApp] WebSocket ping timeout after 119970 ms.
+[I 15:59:11.677 LabApp] Starting buffering for 6bf2c55d-2b5d-4aa5-acd1-bce297673db7:74d9b4b9-36e3-4542-ac1e-cdd43ccc6516
+[I 15:59:11.801 LabApp] Starting buffering for 6340bc14-61ab-4666-b291-538620e82d40:83c459a2-77bf-4b34-bb28-4d49ed77af0f
+[W 15:59:28.645 LabApp] WebSocket ping timeout after 119974 ms.
+[I 15:59:33.646 LabApp] Starting buffering for d3c9c119-8981-42df-9a9c-7664f23b84ef:449d0151-52ae-4aa2-b77c-8243c305afa3
+[I 17:49:31.654 LabApp] 302 GET /?token=49df23ac9bf49c00455bb7058b808a1f83d8ffb1694c9d9a (172.26.113.2) 1.07ms
+[W 17:49:38.822 LabApp] The extension "@lckr/jupyterlab_variableinspector" is outdated.
+    
+[I 17:49:38.823 LabApp] Build is up to date
+[I 18:36:06.891 LabApp] Saving file at /process_a-globin_data.ipynb
+[I 19:46:15.121 LabApp] Saving file at /process_a-globin_data.ipynb
+[I 19:48:16.691 LabApp] Saving file at /process_a-globin_data.ipynb
+[I 22:44:30.217 LabApp] Saving file at /summary_alpha_globin.ipynb
+[I 22:44:30.461 LabApp] Saving file at /process_apol1_data.ipynb
+[I 22:46:32.237 LabApp] Saving file at /summary_alpha_globin.ipynb
+[I 22:48:47.436 LabApp] Starting buffering for 6340bc14-61ab-4666-b291-538620e82d40:5b58305e-b59b-428a-9cbe-ea85cecfb059
+[I 22:48:47.437 LabApp] Starting buffering for d3c9c119-8981-42df-9a9c-7664f23b84ef:70448399-35d8-4f14-8dcf-b5a371b1b57f
+[I 22:48:47.437 LabApp] Starting buffering for 6bf2c55d-2b5d-4aa5-acd1-bce297673db7:799c54eb-9718-4f9e-974a-b99ce43b8be6
+[W 22:49:41.667 LabApp] The extension "@lckr/jupyterlab_variableinspector" is outdated.
+    
+[I 22:49:41.668 LabApp] Build is up to date
+[I 23:08:47.348 LabApp] Saving file at /process_a-globin_data.ipynb
