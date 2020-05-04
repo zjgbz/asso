@@ -44,17 +44,30 @@ gaston_lm_result <- function(gaston_model, var_col_number) {
 }
 
 args = commandArgs(trailingOnly=TRUE)
-cohort = args[1]
+status_name = args[1]
+cohort = args[2]
+expand_interaction = args[3]
 
-table_i = "table1"
+# table_i_vec = c("rs2302524", "rs2302524", "rs2633317", "rs2633317", "rs4251805", "rs4251805",
+# 	            "rs4760", "rs4760", "rs73935023", "rs73935023")
+# table_i = table_i_vec[var_list_idx]
+
+table_i = "table_apol1"
 biclass_list = list("CKD", "microcytosis", "anemia")
 
-var_list_list = list(list("rs399145"), list("APOL1-rs334"), list("rs399145-rs334"), list("APOL1-rs399145"))
-var_list = var_list_list[[strtoi(args[2])]]
+# var_list_list = list(list("rs2302524"), list("apol1-rs2302524"), list("rs2633317"), list("apol1-rs2633317"),
+# 					 list("rs4251805"), list("apol1-rs4251805"), list("rs4760"), list("apol1-rs4760"),
+# 					 list("rs73935023"), list("apol1-rs73935023"))
+# var_list = var_list_list[[var_list_idx]]
 
-pheno_list_list = list(list("EGFRCKDEPI"), list("CKD"))
-pheno_list = pheno_list_list[[strtoi(args[3])]]
-expand_interaction = args[4]
+var_list = list("rs334", "rs399145", "rs11248850", "apol1-rs334", "apol1-rs399145",
+	"apol1-rs11248850", "rs334-rs399145", "rs334-rs11248850", "rs399145-rs11248850")
+
+# pheno_list_list = list(list("EGFRCKDEPI"), list("CKD"))
+# pheno_list = pheno_list_list[[strtoi(args[3])]]
+# pheno_list = list(pheno)
+
+pheno_list = list("EGFRCKDEPI", "CKD")
 
 header_list = list()
 for (var_i in var_list) {
@@ -88,15 +101,15 @@ for (var_i in var_list) {
 	for (pheno_i in pheno_list) {
 		print(var_i)
 		print(pheno_i)
-		load_dir = file.path('..', 'cohort', cohort, table_i, var_i)
-		y_dir_filename = sprintf('../cohort/%s/%s/%s/common_pheno_%s_%s_%s.tsv', cohort, table_i, var_i, table_i, var_i, pheno_i)
+		load_dir = file.path('..', status_name, cohort, table_i, var_i)
+		y_dir_filename = sprintf('../%s/%s/%s/%s/common_pheno_%s_%s_%s.tsv', status_name, cohort, table_i, var_i, table_i, var_i, pheno_i)
 		if (!(file.exists(y_dir_filename))) {
 			next
 		} else if (file.exists(y_dir_filename)) {
-			y = read.csv(sprintf('../cohort/%s/%s/%s/common_pheno_%s_%s_%s.tsv', cohort, table_i, var_i, table_i, var_i, pheno_i), sep='\t', header=TRUE, row.names=1)
-			var = read.csv(sprintf('../cohort/%s/%s/%s/common_var_%s_%s_%s.tsv', cohort, table_i, var_i, table_i, var_i, pheno_i), sep='\t', header=TRUE, row.names=1)
-			age_sex = read.csv(sprintf('../cohort/%s/%s/%s/common_age-sex_%s_%s_%s.tsv', cohort, table_i, var_i, table_i, var_i, pheno_i), sep='\t', header=TRUE, row.names=1)
-			pc10 = read.csv(sprintf('../cohort/%s/%s/%s/common_pc10_%s_%s_%s.tsv', cohort, table_i, var_i, table_i, var_i, pheno_i), sep='\t', header=TRUE, row.names=1)
+			y = read.csv(sprintf('../%s/%s/%s/%s/common_pheno_%s_%s_%s.tsv', status_name, cohort, table_i, var_i, table_i, var_i, pheno_i), sep='\t', header=TRUE, row.names=1)
+			var = read.csv(sprintf('../%s/%s/%s/%s/common_var_%s_%s_%s.tsv', status_name, cohort, table_i, var_i, table_i, var_i, pheno_i), sep='\t', header=TRUE, row.names=1)
+			age_sex = read.csv(sprintf('../%s/%s/%s/%s/common_age-sex_%s_%s_%s.tsv', status_name, cohort, table_i, var_i, table_i, var_i, pheno_i), sep='\t', header=TRUE, row.names=1)
+			pc10 = read.csv(sprintf('../%s/%s/%s/%s/common_pc10_%s_%s_%s.tsv', status_name, cohort, table_i, var_i, table_i, var_i, pheno_i), sep='\t', header=TRUE, row.names=1)
 
 			k_filename_prefix = sprintf('common_kinship_%s_%s_%s', table_i, var_i, pheno_i)
 			k = load_kinship(load_dir, k_filename_prefix)
@@ -199,4 +212,4 @@ for (var_i in var_list) {
 	}
 }
 
-write.table(table_df, file = sprintf("../cohort/%s/%s_%s_%s_%s.tsv", cohort, cohort, table_i, args[2], args[3]), row.names=TRUE, col.names=TRUE, sep='\t')
+write.table(table_df, file = sprintf("../%s/%s/%s_%s_%s.tsv", status_name, cohort, table_i, args[2], args[3]), row.names=TRUE, col.names=TRUE, sep='\t')
